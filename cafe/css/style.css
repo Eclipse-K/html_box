@@ -1,16 +1,16 @@
 @font-face {
-  src: url("../fonts/BMJUA_otf.otf");
+  src: url("../fonts/Gugi-Regular.ttf");
   font-family: "jua";
 }
 
 * {
   box-sizing: border-box;
-  background-color: lemonchiffon;
   font-family: "jua";
 }
 
 body {
   margin: 0;
+  background-color: lemonchiffon;
 }
 
 .navbar {
@@ -53,10 +53,10 @@ body {
 }
 
 .login-form {
-  background-color: lemonchiffon;
-  width: 300px;
-  height: 200px;
-  margin-top: 50px;
+  background-color: lightslategrey;
+  width: 500px;
+  padding: 20px;
+  margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 5px;
@@ -64,11 +64,11 @@ body {
 
 .text-field {
   font-size: 14px;
-  background-color: white;
   width: 100%;
   padding: 10px;
   border: none;
   border-radius: 5px;
+  color: black;
 }
 
 .loginfo {
@@ -93,6 +93,6 @@ body {
 }
 
 .links a {
-  text-decoration: none;
+  font-size: 12px;
   color: black;
 }
