@@ -5,19 +5,24 @@
 
 * {
   box-sizing: border-box;
+  background-color: lemonchiffon;
   font-family: "jua";
+}
+
+body {
+  margin: 0;
 }
 
 .navbar {
   padding: 0 10px;
-  background-color: white;
+  background-color: lemonchiffon;
   overflow: hidden;
   height: 130px;
 }
 
 #logo {
   float: left;
-  line-height: 60pxpx;
+  line-height: 60px;
 }
 
 #logo img {
@@ -44,5 +49,50 @@
   display: block;
   text-decoration: none;
   font-size: 20px;
+  color: black;
+}
+
+.login-form {
+  background-color: lemonchiffon;
+  width: 300px;
+  height: 200px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+
+.text-field {
+  font-size: 14px;
+  background-color: white;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.loginfo {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.submit-btn {
+  font-size: 14px;
+  background-color: palegreen;
+  color: black;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.links {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.links a {
+  text-decoration: none;
   color: black;
 }
