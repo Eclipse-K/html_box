@@ -20,13 +20,21 @@ body {
   height: 115px;
 }
 
-.background {
+.carousel-item {
   height: 650px;
-  line-height: 650px;
-  background-image: url(../images/background_ver2.png);
-  background-position: center center;
   background-size: cover;
-  background-repeat: no-repeat;
+}
+.carousel-item.item1 {
+  background-image: url(../images/경복궁_근정전_전경.jpg);
+  background-position: center center;
+}
+.carousel-item.item2 {
+  background-image: url(../images/석조전.jpeg);
+  background-position: center center;
+}
+.carousel-item.item3 {
+  background-image: url(../images/정관헌.jpeg);
+  background-position: center center;
 }
 
 #logo {
@@ -78,6 +86,11 @@ body {
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 50px;
+}
+
+.product-name {
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .product img {

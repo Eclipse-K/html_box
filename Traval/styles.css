@@ -15,25 +15,8 @@
   font-family: "Helvetica", Times;
   font-size: 16px;
 }
-#home {
-  text-decoration: none;
-  margin-left: 10px;
-  margin-right: 10px;
-  color: #58595b;
-}
-#seoul {
-  text-decoration: none;
-  margin-left: 10px;
-  margin-right: 10px;
-  color: #58595b;
-}
-#tokyo {
-  text-decoration: none;
-  margin-left: 10px;
-  margin-right: 10px;
-  color: #58595b;
-}
-#paris {
+
+.menu a {
   text-decoration: none;
   margin-left: 10px;
   margin-right: 10px;
