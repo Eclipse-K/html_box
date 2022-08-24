@@ -16,7 +16,13 @@
         <a id="tokyo" onclick="clickTokyo();">Tokyo</a>
         <a id="paris" onclick="clickParis();">Paris</a>
       </div>
-      <img id="photo" src="images/home.png" width="90%" />
+      <img
+        id="photo"
+        src="images/home.png"
+        width="90%"
+        onmouseenter="mouseEnterPhoto();"
+        onmouseleave="mouseLeavePhoto();"
+      />
 
       <!--jQuery-->
       <script
@@ -55,6 +61,15 @@
           $("#home").css("font-weight", "normal");
           $("#seoul").css("font-weight", "normal");
           $("#tokyo").css("font-weight", "normal");
+        }
+
+        //사진에 그림자
+        function mouseEnterPhoto() {
+          $("#photo").css("box-shadow", "5px 10px");
+        }
+
+        function mouseLeavePhoto() {
+          $("#photo").css("box-shadow", "none");
         }
       </script>
     </div>
