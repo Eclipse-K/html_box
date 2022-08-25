@@ -11,18 +11,12 @@
         <img src="images/logo.png" width="165" height="58" />
       </h1>
       <div class="menu">
-        <a id="home" onclick="clickHome();">Home</a>
-        <a id="seoul" onclick="clickSeoul();">Seoul</a>
-        <a id="tokyo" onclick="clickTokyo();">Tokyo</a>
-        <a id="paris" onclick="clickParis();">Paris</a>
+        <a id="home">Home</a>
+        <a id="seoul">Seoul</a>
+        <a id="tokyo">Tokyo</a>
+        <a id="paris">Paris</a>
       </div>
-      <img
-        id="photo"
-        src="images/home.png"
-        width="90%"
-        onmouseenter="mouseEnterPhoto();"
-        onmouseleave="mouseLeavePhoto();"
-      />
+      <img id="photo" src="images/home.png" width="90%" />
 
       <!--jQuery-->
       <script
@@ -32,6 +26,14 @@
       ></script>
 
       <script>
+        $("#home").on("click", clickHome);
+        $("#seoul").on("click", clickSeoul);
+        $("#tokyo").on("click", clickTokyo);
+        $("#paris").on("click", clickParis);
+
+        $("#photo").on("mouseEnter", mouseEnterPhoto);
+        $("#photo").on("mouseLeave", mouseLeavePhoto);
+
         function clickHome() {
           $("#photo").attr("src", "images/home.png");
           $("#home").css("font-weight", "bold");
