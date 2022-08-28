@@ -34,6 +34,8 @@
         $("#photo").on("mouseEnter", mouseEnterPhoto);
         $("#photo").on("mouseLeave", mouseLeavePhoto);
 
+        $(document).on("keydown", processKeyEvent);
+
         function clickHome() {
           $("#photo").attr("src", "images/home.png");
           $("#home").css("font-weight", "bold");
@@ -72,6 +74,19 @@
 
         function mouseLeavePhoto() {
           $("#photo").css("box-shadow", "none");
+        }
+
+        //키보드 이벤트 핸들링
+        function processKeyEvent() {
+          if (event["key"] === "1") {
+            clickHome();
+          } else if (event["key"] === "2") {
+            clickSeoul();
+          } else if (event["key"] === "3") {
+            clickTokyo();
+          } else if (event["key"] === "4") {
+            clickParis();
+          }
         }
       </script>
     </div>
