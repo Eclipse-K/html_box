@@ -16,6 +16,7 @@
     <form>
       <p class="loginfo">아이디</p>
       <input
+        id="email-input"
         type="text"
         name="email"
         class="text-field"
@@ -23,16 +24,39 @@
       />
       <p class="loginfo">비밀번호</p>
       <input
+        id="password-input"
         type="password"
         name="password"
         class="text-field"
         placeholder="비밀번호를 입력해 주세요."
       />
-      <input type="submit" value="로그인" class="submit-btn" />
+      <input id="submit-btn" type="submit" value="로그인" />
     </form>
 
     <div class="links">
       <a href="#">비밀번호를 잊어버리셨나요?</a>
     </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $("#email-input").on("input", textInput);
+      $("#password-input").on("input", textInput);
+
+      function textInput() {
+        const email = $("#email-input").val();
+        const password = $("password-input").val();
+
+        if (email === "" || password === "") {
+          $("#submit-btn").css("background-color", "#999699");
+        } else {
+          $("#submit-btn").css("background-color", "#9e2dbc");
+        }
+      }
+    </script>
   </div>
 </body>

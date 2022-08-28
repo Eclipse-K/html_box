@@ -134,9 +134,9 @@ body {
   color: black;
 }
 
-.submit-btn {
+#submit-btn {
   font-size: 14px;
-  background-color: palegreen;
+  background-color: #999699;
   color: black;
   width: 100%;
   padding: 10px;
