@@ -24,14 +24,17 @@ body {
   height: 650px;
   background-size: cover;
 }
+
 .carousel-item.item1 {
   background-image: url(../images/경복궁_근정전_전경.jpg);
   background-position: center center;
 }
+
 .carousel-item.item2 {
   background-image: url(../images/석조전.jpeg);
   background-position: center center;
 }
+
 .carousel-item.item3 {
   background-image: url(../images/정관헌.jpeg);
   background-position: center center;
@@ -48,18 +51,18 @@ body {
   line-height: 120px;
 }
 
-#menu {
+#information {
   list-style-type: none;
   float: right;
   margin: 0;
   padding: 0;
 }
 
-#menu li {
+#information li {
   float: left;
 }
 
-#menu li a {
+#information li a {
   padding-left: 10px;
   padding-right: 10px;
   line-height: 120px;
@@ -69,17 +72,17 @@ body {
   color: black;
 }
 
-.products h3 {
+.menus h3 {
   text-align: center;
 }
 
-.product_list {
+.menu_list {
   min-width: 750px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.product {
+.menu {
   display: block;
   float: left;
   text-align: center;
@@ -88,12 +91,12 @@ body {
   margin-bottom: 50px;
 }
 
-.product-name {
+.menu-name {
   font-size: 14px;
   font-weight: bold;
 }
 
-.product img {
+.menu img {
   width: 225px;
   height: 225px;
 }
@@ -153,8 +156,4 @@ body {
 .links a {
   font-size: 12px;
   color: black;
-}
-
-#back_body {
-  background-image: none;
 }
