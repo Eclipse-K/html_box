@@ -48,8 +48,8 @@
       $("#password-input").on("input", textInput);
 
       function textInput() {
-        const email = $("#email-input").val();
-        const password = $("password-input").val();
+        var email = $("#email-input").val();
+        var password = $("password-input").val();
 
         if (email === "" || password === "") {
           $("#submit-btn").css("background-color", "#999699");
