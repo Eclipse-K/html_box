@@ -4,6 +4,7 @@
     <title>가비</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body>
@@ -26,18 +27,46 @@
       <h3>- Products -</h3>
 
       <div class="product-list">
-        <a class="product">
-          <img src="images/드리퍼.png" width="500px" height="300px" />
-        </a>
+        <ul>
+          <li data-aos="fade-up" data-aos-duration="1000">
+            <a class="product">
+              <img
+                src="images/드리퍼.png"
+                alt="드리퍼"
+                width="500px"
+                height="300px"
+              />
+            </a>
+          </li>
 
-        <a class="product">
-          <img src="images/커피서버.png" width="300px" height="300px" />
-        </a>
+          <li data-aos="fade-up" data-aos-duration="1000">
+            <a class="product">
+              <img
+                src="images/커피서버.png"
+                alt="커피서버"
+                width="300px"
+                height="300px"
+              />
+            </a>
+          </li>
 
-        <a class="product">
-          <img src="images/더치메이커.png" width="300px" height="700px" />
-        </a>
+          <li data-aos="fade-up" data-aos-duration="1000">
+            <a class="product">
+              <img
+                src="images/더치메이커.png"
+                alt="더치메이커"
+                width="300px"
+                height="700px"
+              />
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
