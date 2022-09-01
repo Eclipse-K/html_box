@@ -103,11 +103,12 @@ body {
   height: 225px;
 }
 
-.product {
+.product ul li {
   float: left;
 }
 
-.product img {
+.product ul li img {
+  position: relative;
   border: solid 2px black;
 }
 
