@@ -107,9 +107,16 @@ body {
   float: left;
 }
 
-.product ul li img {
+.product ul li .img {
   position: relative;
   border: solid 2px black;
+}
+
+.product ul li .img img {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
 }
 
 .login_logo {
