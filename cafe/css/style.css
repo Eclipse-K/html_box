@@ -103,18 +103,16 @@ body {
   height: 225px;
 }
 
-.product ul li {
+.product_list ul li {
+  display: table;
   float: left;
 }
 
-.product ul li .img {
-  position: relative;
-  border: solid 2px black;
+.product_list ul li .img {
+  border: solid 2px #232327;
 }
 
-.product ul li .img img {
-  width: 100%;
-  position: absolute;
+.product_list ul li .img img {
   bottom: 0;
   left: 50%;
 }
