@@ -10,6 +10,7 @@
 
 body {
   margin: 0;
+  padding: 0;
   background-color: #232327;
 }
 
@@ -40,6 +41,7 @@ body {
 
 #navbar .nav li {
   float: left;
+  margin: 0 10px;
 }
 
 #navbar .nav li a {
@@ -51,6 +53,25 @@ body {
   font-size: 24px;
   color: white;
   position: relative;
+}
+
+#navbar .nav li a::after {
+  content: "";
+  background-color: white;
+  width: 0;
+  /* 처음 선의 위치를 보고 하려면 width: 100%; 설정하면 편함. */
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  /*오른쪽에 왼쪽으로 사라지는 건  right: 0; */
+  transform: translateX(-50%);
+  /* 축을 이동시켜 위치를 맞춰줌(중앙 이동에 용이) */
+  bottom: 0;
+  transition: 0.3s;
+}
+
+#navbar .nav li a:hover::after {
+  width: 100%;
 }
 
 .carousel-item {
