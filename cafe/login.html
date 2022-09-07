@@ -1,62 +1,64 @@
 <!DOCTYPE html>
-<head>
-  <title>가비</title>
-  <meta charset="utf-8" />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
+<html>
+  <head>
+    <title>가비</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
-  <div class="login_logo">
-    <a href="index.html"
-      ><img src="images/logo.png" class="logo-img" href="index.html"
-    /></a>
-  </div>
-
-  <div class="login-form">
-    <form>
-      <p class="loginfo">아이디</p>
-      <input
-        id="email-input"
-        type="text"
-        name="email"
-        class="text-field"
-        placeholder="아이디를 입력해 주세요."
-      />
-      <p class="loginfo">비밀번호</p>
-      <input
-        id="password-input"
-        type="password"
-        name="password"
-        class="text-field"
-        placeholder="비밀번호를 입력해 주세요."
-      />
-      <input id="submit-btn" type="submit" value="로그인" />
-    </form>
-
-    <div class="links">
-      <a href="#">비밀번호를 잊어버리셨나요?</a>
+  <body>
+    <div class="login_logo">
+      <a href="index.html"
+        ><img src="images/logo.png" class="logo-img" href="index.html"
+      /></a>
     </div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.6.1.min.js"
-      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
-      crossorigin="anonymous"
-    ></script>
+    <div class="login-form">
+      <form>
+        <p class="loginfo">아이디</p>
+        <input
+          id="email-input"
+          type="text"
+          name="email"
+          class="text-field"
+          placeholder="아이디를 입력해 주세요."
+        />
+        <p class="loginfo">비밀번호</p>
+        <input
+          id="password-input"
+          type="password"
+          name="password"
+          class="text-field"
+          placeholder="비밀번호를 입력해 주세요."
+        />
+        <input id="submit-btn" type="submit" value="로그인" />
+      </form>
 
-    <script>
-      $("#email-input").on("input", textInput);
-      $("#password-input").on("input", textInput);
+      <div class="links">
+        <a href="#">비밀번호를 잊어버리셨나요?</a>
+      </div>
 
-      function textInput() {
-        var email = $("#email-input").val();
-        var password = $("password-input").val();
+      <script
+        src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+        crossorigin="anonymous"
+      ></script>
 
-        if (email === "" || password === "") {
-          $("#submit-btn").css("background-color", "#999699");
-        } else {
-          $("#submit-btn").css("background-color", "#9e2dbc");
+      <script>
+        $("#email-input").on("input", textInput);
+        $("#password-input").on("input", textInput);
+
+        function textInput() {
+          var email = $("#email-input").val();
+          var password = $("password-input").val();
+
+          if (email === "" || password === "") {
+            $("#submit-btn").css("background-color", "#999699");
+          } else {
+            $("#submit-btn").css("background-color", "#9e2dbc");
+          }
         }
-      }
-    </script>
-  </div>
-</body>
+      </script>
+    </div>
+  </body>
+</html>
