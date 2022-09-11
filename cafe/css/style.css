@@ -104,13 +104,13 @@ body {
   color: white;
 }
 
-.menu_list {
+.e-menu_list {
   min-width: 750px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.menu {
+.e-menu {
   display: block;
   float: left;
   text-align: center;
@@ -119,13 +119,13 @@ body {
   margin-bottom: 50px;
 }
 
-.menu-name {
+.e-menu-name {
   font-size: 14px;
   color: white;
   font-weight: bold;
 }
 
-.menu img {
+.e-menu img {
   width: 225px;
   height: 225px;
 }
