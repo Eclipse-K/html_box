@@ -94,6 +94,11 @@ body {
   background-position: center center;
 }
 
+.carousel-item.item4 {
+  background-image: url(../images/창덕궁_후원.png);
+  background-position: center center;
+}
+
 .menus h3 {
   text-align: center;
   color: white;
