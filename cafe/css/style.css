@@ -99,6 +99,30 @@ body {
   background-position: center center;
 }
 
+.grid-box {
+  width: 660px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid-info {
+  background-color: white;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  border-top: 50px;
+  overflow: hidden;
+  float: left;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.grid-info img {
+  width: 300px;
+  height: 300px;
+}
+
 .menus h3 {
   text-align: center;
   color: white;
