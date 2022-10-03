@@ -99,6 +99,11 @@ body {
   background-position: center center;
 }
 
+.carousel-item.item5 {
+  background-image: url(../images/광화문.png);
+  background-position: center center;
+}
+
 .grid-box {
   width: 660px;
   margin-left: auto;
