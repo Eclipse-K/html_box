@@ -104,6 +104,11 @@ body {
   background-position: center center;
 }
 
+.carousel-item.item6 {
+  background-image: url(../images/경회루.png);
+  background-position: center center;
+}
+
 .grid-box {
   width: 660px;
   margin-left: auto;
